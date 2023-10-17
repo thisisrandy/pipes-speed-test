@@ -1,5 +1,5 @@
 .PHONY: all
-all: write read get-user-pages
+all: basic-write write read get-user-pages
 
 %: %.cpp common.hpp
 	clang++ -Wall -Wextra -std=c++17 -O3 -g -o $@ $<
